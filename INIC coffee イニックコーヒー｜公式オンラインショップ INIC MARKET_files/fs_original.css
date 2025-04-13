@@ -1,0 +1,290 @@
+/* ギフトセレクション用CSS */
+
+.recomm__gift_selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recomm__gift_selection {
+  max-width: 946px;
+  margin: 0 auto 10px;
+}
+
+.recomm__gift_selection {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+.category_copy {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+
+@media screen and (min-width: 760px) {
+	/* 960px以上に適用されるCSS（PC用） */
+
+.brand__stxt_selection,
+.brand__stxt--re_selection {
+  z-index: 3;
+  width: 38%;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  letter-spacing: 1px;
+}
+
+.brand__stxt_selection {
+  width: 50%;
+}
+
+.brand__stxt_selection {
+  margin-left: auto;
+}
+
+.brand__stxt--re_selection {
+  margin-right: auto;
+}
+
+.brand__tit_selection {
+  margin-bottom: 20px;
+}
+
+}
+
+
+.belt__inic,
+.belt__kippis,
+.belt__kukku,
+.belt__peanuts,
+.belt__factory758,
+.belt__juicy {
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto 100px;
+}
+
+.box3 {
+    width: 45%;
+    padding: 1em 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    color: #2c2c2f;
+    background: #F5F5F5;/*背景色*/
+}
+.box3 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+@media screen and (min-width: 760px){   
+  .pc { display:inline; }
+}
+@media screen and (max-width: 760px){   
+  .pc { display:none; }
+}
+
+
+
+@media screen and (min-width: 760px){
+.br-sp {display: none; }
+}
+
+
+
+@media screen and (max-width: 760px) {
+	/* 760px以下に適用されるCSS（スマホ用） */
+
+.box3 {
+    width: 85%;
+    padding: 1em 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    color: #2c2c2f;
+    background: #F5F5F5;/*背景色*/
+}
+.box3 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+}
+
+
+
+.btn_gift,
+.gift-btn {
+  margin: 30px 0;
+}
+
+.btn_gift a,
+.gift-btn a {
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: 1px solid #333;
+  min-width: 33px;
+	background: #333333;
+	color: #FFF;
+font-weight: lighter;
+
+}
+
+.brand__in_giftselection {
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+  min-height: 350px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+.recomm__gift--list_selection {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: normal;
+    /* font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "ヒラギノ角ゴシック", sans-serif; */
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+    width: 50%;
+    padding: 5%;
+}
+    margin: 0 3.5% 5% 0;
+
+
+/* カート送料無料まで後いくら 非表示用CSS */
+
+.fs-c-cartDiscountInfo {
+    margin: 24px 0;
+    display: none;
+}
+
+
+.fs-c-cartDiscountInfo__title {
+  display: block;
+  font-size: 1.8rem;
+    display: none;
+}
+
+.fs-c-cartDiscountInfo__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-weight: bold;
+    display: none;
+}
+
+.fs-c-cartDiscountInfo__note {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+    display: none;
+}
+
+
+
+/* カート1回目表記CSS */
+
+.fs-body-product-ra_30 .fs-c-subscriptionPriceTable__row--regularDelivery .fs-c-subscriptionPriceTable__label {
+  background: none;
+  font-size: 0px;
+}
+
+.fs-body-product-ra_30 .fs-c-subscriptionPriceTable__row--regularDelivery .fs-c-subscriptionPriceTable__label:before{
+ font-size: 1.8rem;
+ content:'2回目以降';
+ color:black;
+}
+
+.fs-body-product-ra_60 .fs-c-subscriptionPriceTable__row--regularDelivery .fs-c-subscriptionPriceTable__label {
+  background: none;
+  font-size: 0px;
+}
+
+.fs-body-product-ra_60 .fs-c-subscriptionPriceTable__row--regularDelivery .fs-c-subscriptionPriceTable__label:before{
+ font-size: 1.8rem;
+ content:'2回目以降';
+ color:black;
+}
+
+/* menuグローバルナビ追加 */
+
+.gnav--list nav_newbland{
+    width: 58px;
+}
+
+
+
+
+
+
+#fs_ProductDetails.fs-body-product-gd1257 .fs-c-quantity {
+    max-width: fit-content;
+}
+
+#fs_ProductDetails.fs-body-product-gd1257 .fs-c-quantity__select, 
+#fs_ProductDetails.fs-body-product-gd1257 .fs-c-quantity__number {
+    width: 175.42px;
+}
+
+#fs_ProductDetails.fs-body-product-gd1257 .fs-c-quantity::after {
+    right: 0;
+}
+
+#fs_ProductDetails.fs-body-product-gd1257 .fs-c-quantity__message {
+    right: -100px;
+}
+
+
+
+
+/*商品説明の画像表示を調整するCSS*/
+
+.fs-p-productDescription--full .imgmax {
+    width: auto;
+}
+
+
+/*awooタグCSS*/
+
+.awoo-tag {
+  font-size: 14px; /* 文字の大きさ */
+  color: black; /* 文字の色 */
+  background-color: #B6BFC1; /* タグの背景の色 */
+}
+
+.awoo-tag:before {
+  content: "#"; /* タグの前に「#」を付ける */
+}
+
+.awoo-tag:visited {
+    background-color: #E7E4E5; /* あるページAにいてタグを押しawooページに行った後、ページAに戻った際に押下したタグの背景色を変更する */
+}
+
+.awoo-tag:hover {
+    background-color: #FFFFFF; /* タグにホバーしたときの背景色を設定 */
+}
+
+/*カートアイコンの数量表示位置を調整するCSS*/
+.gnav--list.nav_cart {
+    position: relative;
+}

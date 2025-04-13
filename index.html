@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- 画像のパス -->
+  <!-- https://inicmarket.itembox.design/item/common/img/mo_soda/button1.png -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>202503_Tea-sy_テスト環境</title>
+  <link rel="stylesheet" href="./reset.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="./page.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="nav_lang_controller">
+    <ul>
+      <li>
+        <a href="https://us-inic-market.com/" target="_blank">For foreign country users and shipping</a>
+      </li>
+      <li>
+        <div><img src="https://inicmarket.itembox.design/item/ic_lang_en.png" alt="English"></div>
+        <div><a href="https://us-inic-market.com/" target="_blank">English</a></div>
+      </li>
+    </ul>
+  </div>
+  <header id="headers">
+    <nav class="gnavarea">
+      <div class="header_logo"><a href="/">
+          <img src="https://inicmarket.itembox.design/item/nav_logo_sp.png" width="46" height="22" class="sponly"
+            alt="INIC MARKET" />
+          <img src="https://inicmarket.itembox.design/item/nav_logo.png" width="120" height="31" class="pconly"
+            alt="INIC MARKET Fine food for you" />
+        </a></div>
+      <ul class="gnav">
+        <li class="gnav--list nav_inic">
+          <a href="/f/inic" class="gnav--a"><img src="https://inicmarket.itembox.design/item/nav_01.png" height="14"
+              class="imgmax" alt="INIC coffee" /></a>
+        </li>
+        <li class="gnav--list nav_peanuts">
+          <a href="/f/snoopy" class="gnav--a"><img src="https://inicmarket.itembox.design/item/nav_02.png" height="14"
+              class="imgmax" alt="PEANUS coffee" /></a>
+        </li>
+        <li class="gnav--list nav_moomin">
+          <a href="/f/moomin_table" class="gnav--a"><img src="https://inicmarket.itembox.design/item/nav_moomin.png"
+              height="14" class="imgmax" alt="MOOMIN & TABLE" /></a>
+        </li>
+        <li class="gnav--list nav_kukku">
+          <a href="/f/kukku" class="gnav--a"><img src="https://inicmarket.itembox.design/item/nav_04.png" height="14"
+              class="imgmax" alt="KUKKU" /></a>
+        </li>
+        <li class="gnav--list nav_newbland">
+          <a href="/f/menu" class="gnav--a"><img src="https://inicmarket.itembox.design/item/nav_05.png" height="14"
+              class="imgmax" alt="MENU" /></a>
+        </li>
+        <li class="gnav--list nav_newbland">
+          <a href="/f/menu" class="gnav--a"><img src="./img/nav_06.png" height="14" class="imgmax" alt="MENU" /></a>
+        </li>
+      </ul>
+      <ul class="acticon">
+        <li class="gnav--list nav_guide">
+          <a href="/f/first_guide" class="gnav--a">
+            <img src="https://inicmarket.itembox.design/item/nav_guide_img.png" width="21" height="24" alt="はじめての方へ" />
+            <img src="https://inicmarket.itembox.design/item/nav_guide_txt.png" width="46" height="6" alt="FIRST GUIDE"
+              class="pconly" />
+          </a>
+        </li>
+        <li class="gnav--list nav_search">
+          <p id="top__ser" class="icon--top_search">
+            <img src="https://inicmarket.itembox.design/item/nav_search_img.png" width="21" height="24" alt="検索" />
+            <img src="https://inicmarket.itembox.design/item/nav_search_txt.png" width="32" height="6" alt="search"
+              class="pconly" />
+          </p>
+        </li>
+        <li class="gnav--list nav_mypage">
+          <a href="/my/top" class="gnav--a">
+            <img src="https://inicmarket.itembox.design/item/nav_mypage_img.png" width="21" height="24" alt="マイページ" />
+            <img src="https://inicmarket.itembox.design/item/nav_mypage_txt.png" width="34" height="6" alt="MY PAGE"
+              class="pconly" />
+          </a>
+        </li>
+        <li class="gnav--list nav_cart">
+          <a href="/p/cart" class="gnav--a">
+            <div><img src="https://inicmarket.itembox.design/item/nav_cart_img.png?t=20240826115948" width="21"
+                height="24" alt="カート"><span class="fs-client-cart-count"></span></div>
+            <img src="https://inicmarket.itembox.design/item/nav_cart_txt.png" width="21" height="6" alt="CART"
+              class="pconly" />
+          </a>
+        </li>
+        <li class="gnav--list nav_side">
+          <div class="drop_menu gothic">
+            <input type="checkbox" id="switch">
+            <label for="switch">
+              <p><span></span></p><img src="https://inicmarket.itembox.design/item/nav_menu.png" width="22" height="6"
+                alt="メニュー" />
+            </label>
+            <div id="NavWrap">
+              <div class="sp_h_menu sponly">
+                <a href="/my/top" class="gnav--a">
+                  <img src="https://inicmarket.itembox.design/item/nav_mypage_spw.png" width="23" height="23"
+                    alt="マイページ" />
+                </a>
+                <a href="/p/cart" class="gnav--a">
+                  <img src="https://inicmarket.itembox.design/item/nav_cart_spw.png" width="23" height="23" alt="カート" />
+                </a>
+              </div>
+              <div class="Nav_inner">
+                <ul class="accordion">
+                  <li class="search">
+                    <form action="/p/search" class="form--sys">
+                      <label class="form--sys__label"><input type="text" name="keyword" maxlength="1000" value=""
+                          placeholder="キーワードで探す" class="form--sys__label--input" id="TARGET" /><input type="checkbox"
+                          name="tag" value="検索対象" checked><input type="hidden" name="sort" value="priority" /></label>
+                      <button type="submit" class="top_search--btn"><img
+                          src="https://inicmarket.itembox.design/item/common/img/icon--top_search.svg" width="20"
+                          height="20" class="imgmax" alt="検索" /></button>
+                    </form>
+                  </li>
+                  <li class="category">
+                    <dl>
+                      <dt>カテゴリから選ぶ</dt>
+                      <dd>
+                        <ul>
+                          <li><a href="/c/inic_lineup/coffee"><img
+                                src="https://inicmarket.itembox.design/item/menu_01.png" width="37" height="32"
+                                alt="コーヒー" /><span>コーヒー</span></a></li>
+                          <li><a href="/c/coffee_all/decaf"><img
+                                src="https://inicmarket.itembox.design/item/menu_02.png" width="37" height="32"
+                                alt="デカフェ" /><span>デカフェ</span></a></li>
+                          <li><a href="/c/inic_lineup/sweets"><img
+                                src="https://inicmarket.itembox.design/item/menu_03.png" width="37" height="32"
+                                alt="スイーツ" /><span>スイーツ</span></a></li>
+                          <li><a href="/c/inic_lineup/choco_powder"><img
+                                src="https://inicmarket.itembox.design/item/menu_04.png" width="37" height="32"
+                                alt="チョコパウダー" /><span>チョコパウダー</span></a></li>
+                          <li><a href="/f/kukku"><img src="https://inicmarket.itembox.design/item/menu_05.png"
+                                width="37" height="32" alt="製菓材料　フルーツパウダー" /><span>製菓材料</span></a></li>
+                          <li><a href="/c/inic_lineup/goods"><img
+                                src="https://inicmarket.itembox.design/item/menu_06.png" width="37" height="32"
+                                alt="グッズ　雑貨" /><span>グッズ</span></a></li>
+                          <li><a href="/c/inic_lineup/juice"><img
+                                src="https://inicmarket.itembox.design/item/menu_07.png" width="37" height="32"
+                                alt="果汁100％ジュース" /><span>果汁100％ジュース</span></a></li>
+                          <li><a href="/f/menu"><img src="https://inicmarket.itembox.design/item/menu_08.png" width="37"
+                                height="32" alt="青汁　プロテイン　経口補水液" /><span>健康・美容ドリンク</span></a></li>
+                          <li><a href="/f/snoopy"><img src="https://inicmarket.itembox.design/item/menu_09.png"
+                                width="37" height="32" alt="ピーナッツコーヒー" /><span>PEANUTS<br>coffee</span></a></li>
+                          <li><a href="/c/inic_lineup/gift"><img
+                                src="https://inicmarket.itembox.design/item/menu_10.png" width="37" height="32"
+                                alt="ギフト　贈り物" /><span>ギフト</span></a></li>
+                          <li><a href="/c/inic_lineup/inic_teiki"><img
+                                src="https://inicmarket.itembox.design/item/menu_11.png" width="37" height="32"
+                                alt="定期便　サブスク" /><span>定期便</span></a></li>
+                          <li><a href="/c/moomin_table/soup"><img
+                                src="https://inicmarket.itembox.design/item/menu_12.png" width="37" height="32"
+                                alt="スープ" /><span>スープ</span></a></li>
+                          <li><a href="/c/moomin_table/soup"><img src="./img/menu_13.png" width="37" height="32"
+                                alt="ティー" /><span>ティー</span></a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li class="brand">
+                    <dl>
+                      <dt>ブランドから選ぶ</dt>
+                      <dd>
+                        <ul>
+                          <li><a href="/f/inic"><span>INIC coffee</span></a></li>
+                          <li><a href="/f/snoopy"><span>PEANUTS coffee</span></a></li>
+                          <li><a href="/c/kippis"><span>kippis</span></a></li>
+                          <li><a href="/f/menu"><span>ME/NU</span></a></li>
+                          <li><a href="/f/kukku"><span>KUKKU</span></a></li>
+                          <li><a href="/c/inic_lineup/factory758"><span>FACTORY758</span></a></li>
+                          <li><a href="/c/inic_lineup/juicyco"><span>JUICY.co</span></a></li>
+                          <li><a href="/f/moomin_table"><span>MOOMIN & TABLE</span></a></li>
+                          <li><a href="/f/moomin_table"><span>Tea-sy</span></a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li><a href="/c/inic_lineup/gift">ギフト</a></li>
+                  <li class="taste">
+                    <dl>
+                      <dt>コーヒーの味わいから選ぶ</dt>
+                      <dd>
+                        <ul>
+                          <li><a href="/c/inic_lineup/bitter">苦め</a></li>
+                          <li><a href="/c/inic_lineup/light">軽め</a></li>
+                          <li><a href="/c/inic_lineup/body">コク</a></li>
+                          <li><a href="/c/inic_lineup/sweet">甘い</a></li>
+                          <li><a href="/c/coffee_all/decaf">デカフェ</a></li>
+                          <li><a href="/c/inic_lineup/health">健康</a></li>
+                          <li><a href="/c/inic_lineup/iced">アイス専用</a></li>
+                          <li><a href="/c/inic_lineup/milk">ミルク専用</a></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+                  <li><a href="/c/inic_lineup/inic_teiki/">コーヒーの定期便</a></li>
+                  <li><a href="https://www.inic-market.com/cafemaison/" target="_blank"
+                      rel="noopener noreferrer">お菓子とコーヒーの定期便“カフェメゾン”</a></li>
+                </ul>
+                <ul class="single">
+                  <li><a href="/f/first_guide">はじめての方へ</a></li>
+                  <li><a href="/f/about_inic">INIC coffeeについて</a></li>
+                  <li><a href="/f/shopingguide">ショッピングガイド</a></li>
+                  <li><a href="/f/faq">よくある質問</a></li>
+                  <li><a href="https://forms.gle/ydVFjJwQxAU7ebeY9" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+                  </li>
+                </ul>
+                <ul class="sns">
+                  <li><a href="https://page.line.me/158gbiiw?openQrModal=true" target="_blank"
+                      rel="noopener noreferrer"><img src="https://inicmarket.itembox.design/item/menu_line.png"
+                        width="34" height="34" alt="LINE"></a></li>
+                  <li><a href="https://www.instagram.com/iniccoffee/" target="_blank" rel="noopener noreferrer"><img
+                        src="https://inicmarket.itembox.design/item/menu_in.png" width="34" height="34"
+                        alt="instagram"></a></li>
+                  <li><a href="https://twitter.com/INICcoffee" target="_blank" rel="noopener noreferrer"><img
+                        src="https://inicmarket.itembox.design/item/menu_tw.png" width="34" height="34"
+                        alt="twitter"></a></li>
+                  <li><a href="https://www.facebook.com/INICcoffee" target="_blank" rel="noopener noreferrer"><img
+                        src="https://inicmarket.itembox.design/item/menu_fb.png" width="34" height="34"
+                        alt="facebook"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="top_ser gothic">
+      <form action="/p/search" class="form--sys">
+        <label class="form--sys__label"><input type="text" name="keyword" maxlength="1000" value=""
+            placeholder="キーワードで探す" class="form--sys__label--input" id="TARGET"><input type="checkbox" name="tag"
+            value="検索対象" checked=""><input type="hidden" name="sort" value="priority" /></label>
+        <button type="submit" class="top_search--btn"><img
+            src="https://inicmarket.itembox.design/item/common/img/icon--top_search.svg" width="20" height="20"
+            class="imgmax" alt="検索"></button>
+      </form>
+    </div>
+  </header>
+  <div class="foot_menu_wrap">
+    <div class="menu_block left_area">
+      <h2 class="foot_ttl">カテゴリから探す</h2>
+      <div class="sp_accordion coffee_cate">
+        <dl>
+          <dt><a href="/c/inic_lineup/coffee">コーヒー</a><i></i></dt>
+          <dd>
+            <div class="wrap">
+              <ul>
+                <li><a href="/c/inic_lineup/coffee/smooth_aroma">スムースアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/morning_aroma">モーニングアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/night_aroma">ナイトアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/night_aroma_plus">ナイトアロマ　プラス</a></li>
+                <li><a href="/c/inic_lineup/coffee/beans_aroma">ビーンズアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/natural_aroma">ナチュラルアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/honey_coffee">ハニーコーヒー</a></li>
+                <li><a href="/c/inic_lineup/coffee/luxe_aroma">リュクスアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/good_day_aroma">グッドデイアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/daily_aroma_beauty">デイリーアロマビューティ</a></li>
+                <li><a href="/c/inic_lineup/coffee/refresh_aroma">リフレッシュアロマ</a></li>
+              </ul>
+            </div>
+            <div class="wrap">
+              <ul>
+                <li><a href="/c/inic_lineup/coffee/soy_latte">シルキーソイラテ</a></li>
+                <li><a href="/c/inic_lineup/coffee/roastery">ロースタリー</a></li>
+                <li><a href="/c/inic_lineup/coffee/ice_aroma">デイタイムアイスアロマ</a></li>
+                <li><a href="/c/inic_lineup/coffee/season_blend">シーズンブレンド</a></li>
+                <li><a href="/c/kippis">kippis</a></li>
+                <li><a href="/c/inic_lineup/coffee/trunk_coffee">TRUNK COFFEE</a></li>
+              </ul>
+            </div>
+          </dd>
+        </dl>
+        <div class="single_cate">
+          <div class="wrap">
+            <ul>
+              <li><a href="/c/coffee_all/decaf">デカフェ</a></li>
+              <li><a href="/c/inic_lineup/sweets">スイーツ</a></li>
+              <li><a href="/c/inic_lineup/choco_powder">チョコパウダー</a></li>
+              <li><a href="/f/kukku">製菓材料</a></li>
+              <li><a href="/c/inic_lineup/juice">果汁100%ジュース</a></li>
+              <li><a href="/c/moomin_table/soup">スープ</a></li>
+              <li><a href="/c/inic_lineup/goods">グッズ</a></li>
+              <li class="sp_accordion">
+                <dl>
+                  <dt><a href="/f/menu">健康・美容ドリンク</a><i></i></dt>
+                  <dd>
+                    <ul>
+                      <li><a href="/c/menu/re_aojiru">Re AOJIRU</a></li>
+                      <li><a href="/c/menu/protein">Do PROTEIN</a></li>
+                      <li><a href="/c/menu/humaneed">HUMANEED</a></li>
+                      <li><a href="/c/menu/womans_base/dessert_protein">DESSERT PROTEIN</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="wrap">
+            <ul>
+              <li><a href="/f/snoopy">PEANUTS coffee</a></li>
+              <li><a href="/c/inic_lineup/gift">ギフト</a></li>
+              <li><a href="/c/inic_lineup/inic_teiki">コーヒーの定期便</a></li>
+              <li><a href="/cafemaison/">お菓子とコーヒーの定期便“カフェメゾン”</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu_block right_area">
+      <div class="wrap">
+        <h2 class="foot_ttl">Support</h2>
+        <div class="single_cate">
+          <ul>
+            <li><a href="/f/shopingguide">ショッピングガイド</a></li>
+            <li><a href="/f/faq">よくあるご質問</a></li>
+            <li><a href="https://forms.gle/ydVFjJwQxAU7ebeY9" target="_blank">お問い合わせ</a></li>
+            <li><a href="/p/auth/office_coffee">オフィスコーヒー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap">
+        <h2 class="foot_ttl">About us</h2>
+        <div class="single_cate">
+          <ul>
+            <li><a href="/f/first_guide">初めての方へ</a></li>
+            <li><a href="/f/shoplist">取扱店舗</a></li>
+            <li><a href="http://pfforest.com/company.html" target="_blank">会社概要</a></li>
+            <li><a href="/p/about/terms">特定商取引法に関する表示</a></li>
+            <li><a href="/p/about/privacy-policy">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footlink">
+    <ul class="f_sns">
+      <li class="f_sns--list">
+        <a href="https://page.line.me/158gbiiw?openQrModal=true" target="_blank"><img
+            src="https://inicmarket.itembox.design/item/common/img/sns_line-w.svg" width="38" height="38" alt="LINE" /></a>
+      </li>
+      <li class="f_sns--list">
+        <a href="https://www.instagram.com/iniccoffee/" target="_blank"><img
+            src="https://inicmarket.itembox.design/item/common/img/sns_instagram.svg" width="38" height="38" alt="instagram" /></a>
+      </li>
+      <li class="f_sns--list">
+        <a href="https://twitter.com/INICcoffee" target="_blank"><img src="https://inicmarket.itembox.design/item/common/img/sns_twitter3.svg"
+            width="38" height="38" alt="twitter" /></a>
+      </li>
+      <li class="f_sns--list">
+        <a href="https://www.facebook.com/INICcoffee" target="_blank"><img
+            src="https://inicmarket.itembox.design/item/common/img/sns_facebook.svg" width="38" height="38" alt="facebook" /></a>
+      </li>
+    </ul>
+  </div>
+  <script>
+    $(function () {
+      $('.sp_accordion dt i').click(function (e) {
+        $(this).parent().toggleClass('opened');
+        $(this).parent().nextUntil('.sp_accordion dt').slideToggle('normal');
+      });
+    });
+  </script>
+  <ul class="footer_logo">
+    <li class="footer_logo--list">
+      <a href="/f/inic" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_inic.svg" width="94" alt="INIC coffee" /></a>
+    </li>
+    <li class="footer_logo--list">
+      <a href="/f/snoopy" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_peanuts.svg" width="62" alt="peanuts coffee" /></a>
+    </li>
+    <li class="footer_logo--list">
+      <a href="/c/kippis/" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_kippis.svg" width="58" alt="kippis coffee" /></a>
+    </li>
+    <li class="footer_logo--list">
+      <a href="/f/kukku" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_kukku.svg" width="91" alt="kukku" /></a>
+    </li>
+   <li class="footer_logo--list">
+      <a href="/c/inic_lineup/juicyco/" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_juicyco.svg" width="52" alt="JUICYco" /></a>
+    </li>
+    <li class="footer_logo--list">
+      <a href="/f/menu" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_menu.svg" width="45" alt="menu" /></a>
+    </li>
+    <li class="footer_logo--list">
+      <a href="/c/inic_lineup/factory758/" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_f758.svg" width="55" alt="FACTORY758" /></a>
+    </li>
+    <li class="footer_logo--list">
+      <a href="/f/moomin_table" class="footer_logo--a"><img src="https://inicmarket.itembox.design/item/common/img/logo_moomin.png" width="75" alt="MOOMIN & TABLE" /></a>
+    </li>
+  </ul>
+</body>
+
+</html>
