@@ -412,7 +412,7 @@ body {
 .drop_menu #NavWrap li.category ul li img {
 	display: block;
 	margin: 0 auto 5px;
-	;
+	object-fit: contain;
 }
 
 .drop_menu #NavWrap ul li.brand li a span {
@@ -2761,6 +2761,7 @@ a.page_link {
 		width: 50%;
 		font-size: 1.2rem;
 		padding: 0 10px;
+		vertical-align: top;
 	}
 
 	#footers .foot_menu_wrap .left_area .single_cate .wrap>ul>li.sp_accordion {
